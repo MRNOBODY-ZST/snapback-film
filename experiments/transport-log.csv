@@ -1,0 +1,1 @@
+timestamp_ms,state,motor_A_current_A,motor_B_current_A,S0_pack_present,S1_door_closed,S2_dark_slide_inserted,S3_pickup_home,S4_roller_entry,S5_film_exit,battery_V,cycle_duration_ms,frames_remaining,pack_state,fault

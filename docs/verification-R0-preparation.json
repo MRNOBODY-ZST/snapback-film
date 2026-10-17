@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "scope": "Software and nominal CAD only; no physical validation",
+  "software_tests": {
+    "python_tools": 36,
+    "journal": 8,
+    "controller": 29,
+    "bench_cad": 24,
+    "total": 97,
+    "passed": true
+  },
+  "physical_tests": 0,
+  "real_film_cycles": 0,
+  "physical_gates_passed": [],
+  "feasibility_result": "UNCERTAIN — MEASUREMENT REQUIRED",
+  "source_sha256": {
+    "tools/engineering_calculations.py": "9f10e3b151b0d01bad40502bff3afefc81e84e9b5d92ba515eff3bf5bac58347",
+    "tools/analyze_cycle_log.py": "39b5bde81b351a1e5723d7b818bf22142614b44f5072756d58281fbc81674852",
+    "tools/reference_mesh.py": "52feba5780adc8a217c164ff49ef1785023913392825b9bf4f435aa7b5a06f0e",
+    "tools/validate_exports.py": "0dddda275a6f0db45714c21da5aa425b821460727274be2675520a49845d97cc",
+    "firmware/src/controller.cpp": "e62a14318d68cd6e9cf12253063abca4e6e8768e65990902dc728df04cab3a8f",
+    "firmware/src/controller.hpp": "aa8164a584fdfc7975010631da3e20da6e8b89e0ade08831b14127e54c88cbb6",
+    "firmware/src/journal.cpp": "35843d3df7fe7fce56f177a0ebd1cd8b93d8b8b4f842607bfe9be67a98f606de",
+    "firmware/src/journal.hpp": "7220ab122c1b17a86fa06a515d0152eedd1873da418e5dbef7e40660c2dc8910",
+    "cad/feed_test_rig/R0_bench/feed_bench.py": "563f51c07b6df7ea8f368ecb1434224fa986f640323d416306c27cdd580291b5",
+    "cad/roller_test_rig/R0_bench/roller_bench.py": "3ac0b39c0b680966845d3696a8479673c1e2c5e248c3ea234d8314ecb72cb356",
+    "cad/roller_test_rig/R0_bench/bench_geometry.py": "af444bb92bd2b24356b9a966c2100a933d342bd72f9088cb782b9299bf31bdaa"
+  }
+}

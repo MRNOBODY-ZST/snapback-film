@@ -1,0 +1,15 @@
+{
+  "revision": "R0_SOURCE_REFERENCE",
+  "manufacturing_authorized": false,
+  "reference_scale_xyz": [1.0, 1.0, 1.0],
+  "reference_translation_xyz": [0.0, 0.0, 0.0],
+  "transform_provenance": "DERIVED: identity in the source coordinate system; these zeros do not locate an optical or camera datum",
+  "scale_interpretation": "ESTIMATED mm from creator printing context; needs physical verification",
+  "physical_parameter_source": "../parameters.json",
+  "physical_width": null,
+  "physical_height": null,
+  "physical_depth": null,
+  "effective_emulsion_plane": null,
+  "measurement_status": "MEASUREMENT_REQUIRED",
+  "warning": "Scale parameters alter the whole source mesh. They cannot correct individual pickup/exit features, tolerances or film-stack behavior."
+}

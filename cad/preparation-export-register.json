@@ -1,0 +1,20 @@
+{
+  "description": "Only reviewed reference previews and independent R0 test fixtures; never final camera-back approval.",
+  "entries": [
+    {
+      "scope": "SOURCE_REFERENCE_PREVIEW",
+      "manifest_path": "cad/cartridge/R0_reference_only/preview-manifest.json",
+      "export_root": "cad/cartridge/R0_reference_only"
+    },
+    {
+      "scope": "TEST_FIXTURE_ONLY",
+      "manifest_path": "cad/feed_test_rig/R0_bench/exports/manifest.json",
+      "export_root": "cad/feed_test_rig/R0_bench"
+    },
+    {
+      "scope": "TEST_FIXTURE_ONLY",
+      "manifest_path": "cad/roller_test_rig/R0_bench/exports/manifest.json",
+      "export_root": "cad/roller_test_rig/R0_bench"
+    }
+  ]
+}

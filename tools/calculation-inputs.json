@@ -1,0 +1,267 @@
+{
+  "revision": "R0",
+  "status": "MEASUREMENT_REQUIRED",
+  "date": "2026-10-07",
+  "physical_parameter_register": "../cad/parameters.json",
+  "instruction": "Populate from traceable measurements and known design settings. Source-mesh extents do not close physical datum or tolerance inputs. Torque components must not overlap.",
+  "film_plane": {
+    "rb67_effective_plane_z": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "cartridge_effective_offset": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md",
+      "definition": "Signed cartridge datum to effective optical layer; mechanical outer layer is not automatically the emulsion datum"
+    },
+    "cartridge_surface_offset": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md",
+      "definition": "Signed Z of the surface at the same overlap sample as adapter_limit_z; front projection is normally negative"
+    },
+    "adapter_limit_z": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md",
+      "definition": "Measured allowed minimum Z at the same registered XY overlap sample, relative to the adapter rear datum"
+    }
+  },
+  "motor": {
+    "roller_torque": {
+      "value": null,
+      "unit": "N*m",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "pod_torque": {
+      "value": null,
+      "unit": "N*m",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "transport_torque": {
+      "value": null,
+      "unit": "N*m",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "friction_torque": {
+      "value": null,
+      "unit": "N*m",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "external_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "external_efficiency": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "safety_factor": {
+      "value": 2,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "ESTIMATED",
+      "source": "USER requirement SF >= 2; design target, not measured load"
+    },
+    "roller_diameter": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "film_speed": {
+      "value": null,
+      "unit": "mm/s",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    }
+  },
+  "cam": {
+    "pickup_force": {
+      "value": null,
+      "unit": "N",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "stroke": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "rise_angle": {
+      "value": null,
+      "unit": "deg",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "cam_rpm": {
+      "value": null,
+      "unit": "rev/min",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "external_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "external_efficiency": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "safety_factor": {
+      "value": 2,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "ESTIMATED",
+      "source": "USER requirement SF >= 2; design target, not measured load"
+    }
+  },
+  "roller_preload": {
+    "left_rate": {
+      "value": null,
+      "unit": "N/mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "right_rate": {
+      "value": null,
+      "unit": "N/mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "left_compression": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "right_compression": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "active_width": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    }
+  },
+  "gear": {
+    "module": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "driver_teeth": {
+      "value": null,
+      "unit": "teeth",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "driven_teeth": {
+      "value": null,
+      "unit": "teeth",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "pressure_angle": {
+      "value": null,
+      "unit": "deg",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    }
+  },
+  "single_motor_cycle": {
+    "roller_diameter": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "roller_revs_per_cam_rev": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "capture_angle": {
+      "value": null,
+      "unit": "deg",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "slip_fraction": {
+      "value": null,
+      "unit": "ratio",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "distance_after_capture": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    },
+    "margin": {
+      "value": null,
+      "unit": "mm",
+      "tolerance": null,
+      "provenance": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED; docs/measurements.md"
+    }
+  }
+}

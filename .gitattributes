@@ -1,0 +1,10 @@
+# Source/reference/export manifests hash exact file bytes. Do not normalize EOL.
+* -text whitespace=cr-at-eol,-blank-at-eof
+*.stl binary
+*.step binary
+*.stp binary
+*.f3d binary
+*.FCStd binary
+# Preserve upstream license/notices verbatim, including their whitespace.
+/LICENSES/*.txt -whitespace
+/cad/reference/** -whitespace

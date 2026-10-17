@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.FCStd1
+*.bak
+.pio/
+.DS_Store
+Thumbs.db
+.tools-venv/
+.pytest_cache/
+build/
+.test-temp/
+# Historical local delivery inventory contains machine-specific paths.
+/docs/delivery-R0-preparation.json

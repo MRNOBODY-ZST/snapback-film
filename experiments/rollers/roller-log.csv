@@ -1,0 +1,1 @@
+revision,date,film_batch,roller_pair_id,diameter_mm,material,hardness_scale,hardness_value,surface_finish_Ra_um,radial_runout_mm,preload_left_N,preload_right_N,gap_state,gap_mm,parallelism_mm,speed_mm_s,pod_rupture,full_spread_ratio,edge_failure_mm,streak_metric,roller_marks,current_trace_path,image_path,result,next_action

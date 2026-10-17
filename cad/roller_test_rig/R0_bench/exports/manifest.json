@@ -1,0 +1,1557 @@
+{
+  "mode": "TEST_FIXTURE_ONLY",
+  "revision": "R0_BENCH",
+  "scope": "INDEPENDENT_TEST_FIXTURE",
+  "fixture": "roller_bench",
+  "manufacturing_status": "R0_FIXTURE_ONLY_PROTOTYPE",
+  "physical_validation": false,
+  "physical_camera_fit_validated": false,
+  "physical_cartridge_fit_validated": false,
+  "final_back_manufacturing_authorized": false,
+  "fixture_manufacturing_authorized": true,
+  "manufacturing_conditions": "Independent bench only; CNC load path, no FDM precision/contact surfaces; verify pilots/threads, actual fits and assembly against README before powered tests.",
+  "software": {
+    "python": "3.12.14",
+    "cadquery": "2.8.0"
+  },
+  "input_parameters": {
+    "base_x": {
+      "value": 180,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent bench stock length"
+    },
+    "base_y": {
+      "value": 120,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent bench stock width"
+    },
+    "base_z": {
+      "value": 10,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined base thickness candidate"
+    },
+    "frame_center_x": {
+      "value": 65,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Symmetric experimental bearing support spacing"
+    },
+    "frame_x": {
+      "value": 12,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined support thickness"
+    },
+    "frame_y": {
+      "value": 64,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined support width"
+    },
+    "frame_z": {
+      "value": 118,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined support height above base"
+    },
+    "lower_center_z": {
+      "value": 25,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Fixed dummy mandrel centre above bench datum"
+    },
+    "upper_center_z": {
+      "value": 65,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Park position of adjustable dummy mandrel; not operating nip"
+    },
+    "guide_width_y": {
+      "value": 32.4,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Slotted guide clearance candidate"
+    },
+    "guide_bottom_z": {
+      "value": 40,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent guide opening lower end"
+    },
+    "guide_height_z": {
+      "value": 66,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent guide opening travel provision"
+    },
+    "slider_width_y": {
+      "value": 32,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined sliding carrier width"
+    },
+    "slider_height_z": {
+      "value": 28,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Machined sliding carrier height"
+    },
+    "gauge_diameter": {
+      "value": 30,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Rigid alignment dummy diameter; no chemical spreading selection"
+    },
+    "gauge_face_length": {
+      "value": 90,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Rigid alignment dummy barrel length; not film width interface"
+    },
+    "shaft_nominal_diameter": {
+      "value": 8,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Custom ground shaft nominal matching trial reference bore; procurement tolerance unresolved"
+    },
+    "shaft_length": {
+      "value": 172,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Custom experimental mandrel overall length"
+    },
+    "shaft_clearance_diameter": {
+      "value": 8.3,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Non-bearing through clearance"
+    },
+    "bearing_bore": {
+      "value": 8,
+      "unit": "mm",
+      "status": "MANUFACTURER_SPEC",
+      "source": "MANUFACTURER_DATASHEET",
+      "scope": "COTS_TRIAL",
+      "rationale": "MISUMI B608ZZ nominal d; envelope only",
+      "source_url": "https://th.misumi-ec.com/pdf/fa/2013/p631.pdf"
+    },
+    "bearing_outer_diameter": {
+      "value": 22,
+      "unit": "mm",
+      "status": "MANUFACTURER_SPEC",
+      "source": "MANUFACTURER_DATASHEET",
+      "scope": "COTS_TRIAL",
+      "rationale": "MISUMI B608ZZ nominal D; envelope only",
+      "source_url": "https://th.misumi-ec.com/pdf/fa/2013/p631.pdf"
+    },
+    "bearing_width": {
+      "value": 7,
+      "unit": "mm",
+      "status": "MANUFACTURER_SPEC",
+      "source": "MANUFACTURER_DATASHEET",
+      "scope": "COTS_TRIAL",
+      "rationale": "MISUMI B608ZZ nominal B; envelope only",
+      "source_url": "https://th.misumi-ec.com/pdf/fa/2013/p631.pdf"
+    },
+    "bearing_pocket_diameter": {
+      "value": 22.02,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own machining clearance candidate; not H7 nor manufacturer tolerance"
+    },
+    "bearing_pocket_depth": {
+      "value": 7.2,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own axial clearance candidate"
+    },
+    "cap_x": {
+      "value": 2,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own bearing retention cap thickness"
+    },
+    "cap_y": {
+      "value": 36,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own cap transverse width"
+    },
+    "lower_cap_z": {
+      "value": 26,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own fixed carrier cap height"
+    },
+    "upper_cap_z": {
+      "value": 30,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own movable carrier cap height"
+    },
+    "cap_shaft_clearance": {
+      "value": 8.5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own nonprecision shaft opening"
+    },
+    "cap_bolt_y": {
+      "value": 13,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own four-cap-hole Y offset"
+    },
+    "cap_bolt_z": {
+      "value": 10,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own four-cap-hole Z offset"
+    },
+    "cap_clearance_diameter": {
+      "value": 3.5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own fastener clearance candidate"
+    },
+    "cap_pilot_diameter": {
+      "value": 2.5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own pilot only; machinist verifies chosen threading process"
+    },
+    "cap_pilot_depth": {
+      "value": 8,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own blind pilot depth"
+    },
+    "collar_diameter": {
+      "value": 16,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Custom machined axial collar candidate"
+    },
+    "collar_bore": {
+      "value": 8.1,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Custom nonpress collar bore candidate"
+    },
+    "collar_width": {
+      "value": 6,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Custom collar width"
+    },
+    "collar_center_x": {
+      "value": 79,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Symmetric parked axial collar centres"
+    },
+    "bridge_x": {
+      "value": 18,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent spring-adjustment bridge stock"
+    },
+    "bridge_y": {
+      "value": 44,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent bridge width"
+    },
+    "bridge_z": {
+      "value": 8,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Independent bridge thickness"
+    },
+    "frame_bolt_y": {
+      "value": 24,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Base bolt Y offsets outside moving window"
+    },
+    "bridge_bolt_y": {
+      "value": 16,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Bridge attachment offsets"
+    },
+    "structural_clearance_diameter": {
+      "value": 5.5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own bolt clearance candidate"
+    },
+    "structural_pilot_diameter": {
+      "value": 4.2,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own pilot only; verify threading before machining"
+    },
+    "structural_pilot_depth": {
+      "value": 14,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own attachment pilot depth"
+    },
+    "adjuster_pilot_diameter": {
+      "value": 5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Adjustment screw pilot provision; chosen thread/turn-force unqualified"
+    },
+    "spring_seat_diameter": {
+      "value": 14,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Available seat envelope only; spring not selected"
+    },
+    "spring_seat_depth": {
+      "value": 2,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Available seat recess depth"
+    },
+    "stop_y": {
+      "value": 20,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Removable machined stop insert width"
+    },
+    "stop_height_z": {
+      "value": 5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Neutral removable stop height; not measured compression stop"
+    },
+    "stop_range_min": {
+      "value": 0.5,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own interchangeable stop stock lower option"
+    },
+    "stop_range_max": {
+      "value": 12,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Own interchangeable stop stock upper option"
+    },
+    "cut_extra": {
+      "value": 1,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Boolean cutter overshoot, not a manufactured dimension"
+    },
+    "stl_linear_tolerance": {
+      "value": 0.05,
+      "unit": "mm",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Export tessellation setting, not machining tolerance"
+    },
+    "stl_angular_tolerance": {
+      "value": 0.1,
+      "unit": "rad",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Export tessellation setting"
+    },
+    "intersection_volume_tolerance": {
+      "value": 1e-05,
+      "unit": "mm^3",
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "rationale": "Numerical solid-intersection reporting threshold"
+    },
+    "actual_nip_gap": {
+      "value": null,
+      "unit": "mm",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "Actual selected compliant roller working nip must be measured"
+    },
+    "actual_preload": {
+      "value": null,
+      "unit": "N",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "Actual loaded preload must be measured"
+    },
+    "spring_rate": {
+      "value": null,
+      "unit": "N/mm",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "Actual paired spring rate unselected"
+    },
+    "spring_free_length": {
+      "value": null,
+      "unit": "mm",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "No actual spring chosen or modeled"
+    },
+    "spring_outer_diameter": {
+      "value": null,
+      "unit": "mm",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "Spring seat provision is not spring diameter"
+    },
+    "cartridge_external_width": {
+      "value": null,
+      "unit": "mm",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "No cartridge interface created"
+    },
+    "roller_surface_material": {
+      "value": null,
+      "unit": "material",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "Chemically compatible non-FDM contact surface unselected"
+    },
+    "camera_mount_geometry": {
+      "value": null,
+      "unit": "geometry",
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED",
+      "scope": "PHYSICAL_INTERFACE",
+      "rationale": "No camera mount included"
+    }
+  },
+  "coordinate_system": "B_R: X roller axis, Y feed direction, Z up; origin at base bottom centre. Unrelated to camera R.",
+  "derived_parameters": {
+    "bare_carrier_min_z": {
+      "value": 54.0,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "guide_bottom_z + slider_height_z/2"
+    },
+    "bare_carrier_max_z": {
+      "value": 92.0,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "guide_bottom_z + guide_height_z - slider_height_z/2"
+    },
+    "bare_carrier_travel": {
+      "value": 38.0,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "guide_height_z - slider_height_z"
+    },
+    "installed_stop_carrier_min_z": {
+      "value": 59.0,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "bare_carrier_min_z + stop_height_z"
+    },
+    "nominal_side_clearance_each": {
+      "value": 0.1999999999999993,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "(guide_width_y-slider_width_y)/2"
+    },
+    "parked_dummy_surface_separation": {
+      "value": 10,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "upper_center_z-lower_center_z-gauge_diameter; NOT actual_nip_gap"
+    },
+    "bearing_centre_local_x": {
+      "value": 2.5,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "frame_x/2-bearing_width/2"
+    },
+    "bearing_pocket_centre_local_x": {
+      "value": 2.4,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "frame_x/2-bearing_pocket_depth/2"
+    },
+    "frame_top_z": {
+      "value": 128,
+      "unit": "mm",
+      "status": "DERIVED",
+      "source": "OWN_DESIGN",
+      "scope": "BENCH",
+      "formula": "base_z+frame_z"
+    }
+  },
+  "geometry_checks": {
+    "unintended_interferences": [],
+    "parts": [
+      {
+        "name": "OWN_base",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 215049.66822228912,
+        "model_bbox_mm": [
+          -90.0,
+          -60.0,
+          0.0,
+          90.0,
+          60.0,
+          10.0
+        ]
+      },
+      {
+        "name": "OWN_L_frame",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 61028.62939958555,
+        "model_bbox_mm": [
+          -71.00000000000001,
+          -32.0,
+          10.0,
+          -59.0,
+          32.0,
+          128.0
+        ]
+      },
+      {
+        "name": "OWN_L_carrier",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 7304.923317740791,
+        "model_bbox_mm": [
+          -71.0,
+          -16.0,
+          51.0,
+          -59.0,
+          16.0,
+          79.0
+        ]
+      },
+      {
+        "name": "OWN_L_bridge",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 5798.787656236144,
+        "model_bbox_mm": [
+          -74.0,
+          -22.0,
+          128.0,
+          -56.0,
+          22.000000000000004,
+          136.0
+        ]
+      },
+      {
+        "name": "OWN_L_stop_insert",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1199.9999999999998,
+        "model_bbox_mm": [
+          -71.0,
+          -10.0,
+          40.0,
+          -59.0,
+          10.000000000000002,
+          45.0
+        ]
+      },
+      {
+        "name": "OWN_L_lower_bearing_cap",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1681.5409453761192,
+        "model_bbox_mm": [
+          -73.0,
+          -18.0,
+          12.0,
+          -71.0,
+          18.0,
+          38.0
+        ]
+      },
+      {
+        "name": "REF_COTS_B608ZZ_L_lower",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2309.070600388498,
+        "model_bbox_mm": [
+          -71.0,
+          -11.0,
+          14.0,
+          -64.0,
+          11.0,
+          36.0
+        ]
+      },
+      {
+        "name": "OWN_L_lower_axial_collar",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 877.6809211293613,
+        "model_bbox_mm": [
+          -82.0000001,
+          -8.0000001,
+          16.9999999,
+          -75.9999999,
+          8.0000001,
+          33.00000012952771
+        ]
+      },
+      {
+        "name": "OWN_L_upper_bearing_cap",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1969.5409453761195,
+        "model_bbox_mm": [
+          -73.0,
+          -18.0,
+          50.0,
+          -71.0,
+          18.0,
+          80.0
+        ]
+      },
+      {
+        "name": "REF_COTS_B608ZZ_L_upper",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2309.070600388498,
+        "model_bbox_mm": [
+          -71.0,
+          -11.0,
+          54.0,
+          -64.0,
+          11.0,
+          76.0
+        ]
+      },
+      {
+        "name": "OWN_L_upper_axial_collar",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 877.6809211244681,
+        "model_bbox_mm": [
+          -82.0000001,
+          -8.0000001,
+          56.9999999,
+          -75.9999999,
+          8.0000001,
+          73.00000012952772
+        ]
+      },
+      {
+        "name": "OWN_R_frame",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 61028.62939958556,
+        "model_bbox_mm": [
+          59.0,
+          -32.0,
+          10.0,
+          71.0,
+          32.0,
+          128.0
+        ]
+      },
+      {
+        "name": "OWN_R_carrier",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 7304.923317740791,
+        "model_bbox_mm": [
+          59.0,
+          -16.0,
+          51.0,
+          71.0,
+          16.0,
+          79.0
+        ]
+      },
+      {
+        "name": "OWN_R_bridge",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 5798.787656236144,
+        "model_bbox_mm": [
+          56.0,
+          -22.0,
+          128.0,
+          74.0,
+          22.0,
+          136.0
+        ]
+      },
+      {
+        "name": "OWN_R_stop_insert",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1199.9999999999998,
+        "model_bbox_mm": [
+          59.0,
+          -10.0,
+          40.0,
+          71.0,
+          10.0,
+          45.0
+        ]
+      },
+      {
+        "name": "OWN_R_lower_bearing_cap",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1681.5409453761195,
+        "model_bbox_mm": [
+          71.0,
+          -18.0,
+          12.0,
+          73.0,
+          18.0,
+          38.0
+        ]
+      },
+      {
+        "name": "REF_COTS_B608ZZ_R_lower",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2309.070600388498,
+        "model_bbox_mm": [
+          64.0,
+          -11.0,
+          14.0,
+          71.0,
+          11.0,
+          36.0
+        ]
+      },
+      {
+        "name": "OWN_R_lower_axial_collar",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 877.6809211293613,
+        "model_bbox_mm": [
+          75.9999999,
+          -8.0000001,
+          16.9999999,
+          82.0000001,
+          8.0000001,
+          33.00000012952771
+        ]
+      },
+      {
+        "name": "OWN_R_upper_bearing_cap",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 1969.5409453761195,
+        "model_bbox_mm": [
+          71.0,
+          -18.0,
+          50.0,
+          73.0,
+          18.0,
+          80.0
+        ]
+      },
+      {
+        "name": "REF_COTS_B608ZZ_R_upper",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 2309.070600388498,
+        "model_bbox_mm": [
+          64.0,
+          -11.0,
+          54.0,
+          71.0,
+          11.0,
+          76.0
+        ]
+      },
+      {
+        "name": "OWN_R_upper_axial_collar",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 877.6809211244681,
+        "model_bbox_mm": [
+          75.9999999,
+          -8.0000001,
+          56.9999999,
+          82.0000001,
+          8.0000001,
+          73.00000012952772
+        ]
+      },
+      {
+        "name": "OWN_lower_rigid_alignment_gauge_NOT_developer_roller",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 67739.02079670313,
+        "model_bbox_mm": [
+          -86.0,
+          -15.0,
+          10.0,
+          86.0,
+          15.0,
+          40.0
+        ]
+      },
+      {
+        "name": "OWN_upper_rigid_alignment_gauge_NOT_developer_roller",
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 67739.02079670313,
+        "model_bbox_mm": [
+          -86.0,
+          -15.0,
+          50.0,
+          86.0,
+          15.0,
+          80.0
+        ]
+      }
+    ],
+    "checked_pairs": 253,
+    "scope": "RIGID_NOMINAL_CAD_ONLY; no real material, bolt, spring or film validation",
+    "guide_side_clearance_each_mm": 0.1999999999999993,
+    "neutral_gauge_surface_separation_mm": 10,
+    "derived_parameters": {
+      "bare_carrier_min_z": {
+        "value": 54.0,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "guide_bottom_z + slider_height_z/2"
+      },
+      "bare_carrier_max_z": {
+        "value": 92.0,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "guide_bottom_z + guide_height_z - slider_height_z/2"
+      },
+      "bare_carrier_travel": {
+        "value": 38.0,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "guide_height_z - slider_height_z"
+      },
+      "installed_stop_carrier_min_z": {
+        "value": 59.0,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "bare_carrier_min_z + stop_height_z"
+      },
+      "nominal_side_clearance_each": {
+        "value": 0.1999999999999993,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "(guide_width_y-slider_width_y)/2"
+      },
+      "parked_dummy_surface_separation": {
+        "value": 10,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "upper_center_z-lower_center_z-gauge_diameter; NOT actual_nip_gap"
+      },
+      "bearing_centre_local_x": {
+        "value": 2.5,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "frame_x/2-bearing_width/2"
+      },
+      "bearing_pocket_centre_local_x": {
+        "value": 2.4,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "frame_x/2-bearing_pocket_depth/2"
+      },
+      "frame_top_z": {
+        "value": 128,
+        "unit": "mm",
+        "status": "DERIVED",
+        "source": "OWN_DESIGN",
+        "scope": "BENCH",
+        "formula": "base_z+frame_z"
+      }
+    }
+  },
+  "step_roundtrip": {
+    "valid": true,
+    "solid_count": 23,
+    "max_bbox_error_mm": 0.0008548494977685142,
+    "model_bbox_mm": [
+      -90.0,
+      -60.0,
+      0.0,
+      90.0,
+      60.0,
+      136.0
+    ]
+  },
+  "parts": [
+    {
+      "name": "OWN_base",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_frame",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_carrier",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_bridge",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_stop_insert",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_lower_bearing_cap",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "REF_COTS_B608ZZ_L_lower",
+      "manufacturing_method": "PURCHASE_COTS_NOT_PRINT",
+      "is_cots_envelope_reference": true,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_lower_axial_collar",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_upper_bearing_cap",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "REF_COTS_B608ZZ_L_upper",
+      "manufacturing_method": "PURCHASE_COTS_NOT_PRINT",
+      "is_cots_envelope_reference": true,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_L_upper_axial_collar",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_frame",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_carrier",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_bridge",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_stop_insert",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_lower_bearing_cap",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "REF_COTS_B608ZZ_R_lower",
+      "manufacturing_method": "PURCHASE_COTS_NOT_PRINT",
+      "is_cots_envelope_reference": true,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_lower_axial_collar",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_upper_bearing_cap",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "REF_COTS_B608ZZ_R_upper",
+      "manufacturing_method": "PURCHASE_COTS_NOT_PRINT",
+      "is_cots_envelope_reference": true,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_R_upper_axial_collar",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_lower_rigid_alignment_gauge_NOT_developer_roller",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    },
+    {
+      "name": "OWN_upper_rigid_alignment_gauge_NOT_developer_roller",
+      "manufacturing_method": "CNC_MACHINING_REQUIRED",
+      "is_cots_envelope_reference": false,
+      "fdm_authorized_for_loaded_or_film_contact_use": false
+    }
+  ],
+  "exports": [
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/roller_bench_R0_fixture_only.step",
+      "role": "INDEPENDENT_FIXTURE_ASSEMBLY",
+      "bytes": 813922,
+      "sha256": "09082ed66f3235d09ab7a253e1f60f5ac6324b5b38145bb53f3e684de4d7beed",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_base.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 102284,
+      "sha256": "39b216a4a31c75c86dbeda722a43476950eeb4e19e0e97a3818ed23fc2f36467",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_frame.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 253884,
+      "sha256": "6012cc1f31f2018ee993d62f28d0024bed7793688b263348ae87c9dd3405efe8",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_carrier.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 169284,
+      "sha256": "bb479638b48cc015795a723a37d6c4c3214e31d11b2d9df36c7c639e57e5df6b",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_bridge.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 76884,
+      "sha256": "c8c7db93dedba46e202ab320529d0aa0596a46f371dc9550985ae8bd064cd5bd",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_stop_insert.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 684,
+      "sha256": "0c10ed8330f65df4757c39a131978fb3ffba2cd1fd69b159451f391073ae5d84",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_lower_bearing_cap.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 127684,
+      "sha256": "ab523ca273e1f69f4ca76ab6e64e25d2e095b5dbe8ccd9ed560c60af6647cfb2",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/REF_COTS_B608ZZ_L_lower.stl",
+      "role": "COTS_ENVELOPE_REFERENCE_NOT_FOR_MANUFACTURE",
+      "bytes": 50484,
+      "sha256": "0a5f221aa0d42f82f7fcfe8d800e438c144a116988133aa5ed965be18974eca5",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_lower_axial_collar.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 82084,
+      "sha256": "f042defaf95cac972049a3613b8d7025ae1646dc9e4e6c97af75f6b36d332cfa",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_upper_bearing_cap.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 127684,
+      "sha256": "a9924455a820e13154a2dc0f8c177806dac6dd6c7e801a612e21721e2b059182",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/REF_COTS_B608ZZ_L_upper.stl",
+      "role": "COTS_ENVELOPE_REFERENCE_NOT_FOR_MANUFACTURE",
+      "bytes": 50484,
+      "sha256": "30087bac49bb73630dadb62af611c17efeaf8b9b82192dc74fd154ed64298069",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_L_upper_axial_collar.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 82084,
+      "sha256": "544e053a92319b9a1c29e7133ffd725053d09ad81071d0630b21ff21445c47e7",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_frame.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 253884,
+      "sha256": "2cbce5a102797378c2fbe7c5fc1e34531f1e504a04633216c74c4ebdf5b40493",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_carrier.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 169284,
+      "sha256": "cfb7be11c86211cfc23dbe0ce1b07b3c09176098cd375799be9ea35bb007615e",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_bridge.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 76884,
+      "sha256": "9058639e103978d079c17230ff296239a28b66ae7eda6bb10ae581ab7df8f55d",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_stop_insert.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 684,
+      "sha256": "b2599507873d42e65dae22becd5754429e09fe784616f79609ffe168c34ba3e6",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_lower_bearing_cap.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 127684,
+      "sha256": "9168734436d566a76baae1ae8997c1ce0de3ceb4a505ac47df341c447fc30ee3",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/REF_COTS_B608ZZ_R_lower.stl",
+      "role": "COTS_ENVELOPE_REFERENCE_NOT_FOR_MANUFACTURE",
+      "bytes": 50484,
+      "sha256": "02bc189863886b44790c9221859d2afeb5f804e93100a4e5229820414390d635",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_lower_axial_collar.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 82084,
+      "sha256": "4465e3f599564dede8ca99b2939e5fbd3e776a7614d63e3979115ef178a75366",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_upper_bearing_cap.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 127684,
+      "sha256": "3869970d8f24d8b19db09a9c3fa8457568ecd8e6d07fb288c59cc0d5cf33cebb",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/REF_COTS_B608ZZ_R_upper.stl",
+      "role": "COTS_ENVELOPE_REFERENCE_NOT_FOR_MANUFACTURE",
+      "bytes": 50484,
+      "sha256": "55ebcc7285aee35ca25b21147ab6ac6739ec379b181581d1b82acbf39d5d186a",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_R_upper_axial_collar.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 82084,
+      "sha256": "14a2742d18720a775979da86fa059ae9d4592975368f3b95843f16aa7f795389",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_lower_rigid_alignment_gauge_NOT_developer_roller.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 75484,
+      "sha256": "8c36c3dc512238bb807ad4b323f0251e4edbc364244257869ceba41087747e51",
+      "units": "mm"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/exports/OWN_upper_rigid_alignment_gauge_NOT_developer_roller.stl",
+      "role": "FIXTURE_PART_MACHINING_REFERENCE",
+      "bytes": 75484,
+      "sha256": "97ed083010106f79effaf21c226fcad89d3796441f879685e734e1c63a0f40ad",
+      "units": "mm"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "cad/roller_test_rig/R0_bench/roller_bench.py",
+      "bytes": 9769,
+      "sha256": "3ac0b39c0b680966845d3696a8479673c1e2c5e248c3ea234d8314ecb72cb356",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/config.json",
+      "bytes": 11255,
+      "sha256": "2167f294c53051346659ca48d6c1c03da331c993eae46e4883cacbb43ddc8601",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/README.md",
+      "bytes": 7341,
+      "sha256": "b6a38382060fc93ec9dc0a172edb5d30ae5c590b66841cce263c7a7f7a84a80f",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/manufacturing-spec.json",
+      "bytes": 3815,
+      "sha256": "9fd76b07abe3919a6711af0f43f7bf8c13ce6d676dd89fb9f0d6aced1d5b89cd",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/test_roller_bench.py",
+      "bytes": 3541,
+      "sha256": "5214f1ac8bb169bc17437dc7bc12c9d35342cc45541f2815600fa3ca688e5cc9",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/fixture_contract.py",
+      "bytes": 2107,
+      "sha256": "df5c369857feb1f3b263b01d2e29f5e31c1a2bbc4a8e643483e0742bf095a7d0",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/bench_geometry.py",
+      "bytes": 6087,
+      "sha256": "af444bb92bd2b24356b9a966c2100a933d342bd72f9088cb782b9299bf31bdaa",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    },
+    {
+      "path": "cad/roller_test_rig/R0_bench/requirements-lock.txt",
+      "bytes": 892,
+      "sha256": "98ea0f0a13f8af04afba8d17adf69b97906e7922a3a60045257f3ef45ef23192",
+      "role": "OWN_DESIGN_SOURCE_OR_BUILD_ENVIRONMENT"
+    }
+  ],
+  "manufacturing_spec": {
+    "mode": "TEST_FIXTURE_ONLY",
+    "source": "OWN_DESIGN",
+    "status": "ESTIMATED",
+    "scope": "R0 independent bench machining targets; no physical achievement or film qualification claimed",
+    "general_linear_tolerance_mm": {
+      "minus": 0.1,
+      "plus": 0.1,
+      "status": "ESTIMATED",
+      "source": "OWN_DESIGN"
+    },
+    "critical_features": [
+      {
+        "feature": "bearing_pocket_diameter",
+        "nominal_mm": 22.02,
+        "tolerance_mm": {
+          "minus": 0.01,
+          "plus": 0.01
+        },
+        "manufacturing_method": "CNC bore then finish/measure; not an asserted H7 fit",
+        "measurement_method": "Bore gauge and measured purchased bearing OD; check hand assembly and retention",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "custom_shaft_journal",
+        "nominal_mm": 8,
+        "tolerance_mm": {
+          "minus": 0.01,
+          "plus": 0
+        },
+        "manufacturing_method": "Turn and finish grind, custom part; bearing supplier tolerance must be checked",
+        "measurement_method": "Micrometer along both journals in two directions, trial bearing rotation without forcing",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "gauge_barrel_diameter",
+        "nominal_mm": 30,
+        "tolerance_mm": {
+          "minus": 0.02,
+          "plus": 0.02
+        },
+        "manufacturing_method": "Turn/grind rigid dummy only; no qualified developer-contact surface",
+        "measurement_method": "Micrometer in axial stations, indicator on assembled rotation",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "guide_width_y",
+        "nominal_mm": 32.4,
+        "tolerance_mm": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "manufacturing_method": "CNC mill/deburr parallel guide faces",
+        "measurement_method": "Inside measurement at lower/middle/upper guide; feeler check with installed carrier",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "slider_width_y",
+        "nominal_mm": 32,
+        "tolerance_mm": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "manufacturing_method": "CNC mill, sliding faces finish, no FDM bearing/slide surfaces",
+        "measurement_method": "Micrometer and free manual full travel; actual play recorded separately",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "bearing_axis_height_lower",
+        "nominal_mm": 25,
+        "tolerance_mm": {
+          "minus": 0.02,
+          "plus": 0.02
+        },
+        "manufacturing_method": "Machine both supports in common setup from base seating datum",
+        "measurement_method": "Gauge mandrel and height gauge/indicator over base; shim/re-machine if axes bind",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "bearing_pocket_depth",
+        "nominal_mm": 7.2,
+        "tolerance_mm": {
+          "minus": 0.02,
+          "plus": 0.02
+        },
+        "manufacturing_method": "CNC stepped bore; caps need controlled race retention after actual bearing inspection",
+        "measurement_method": "Depth micrometer; check bearing axial clearance and no shield/race rubbing",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "stop_insert_height",
+        "nominal_mm": 5,
+        "tolerance_mm": {
+          "minus": 0.02,
+          "plus": 0.02
+        },
+        "manufacturing_method": "Matched machined stop pair, removable; this park stop is not nip calibration",
+        "measurement_method": "Micrometer and both carrier stop contact heights",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      },
+      {
+        "feature": "cap_and_structural_pilot_holes",
+        "nominal_mm": {
+          "cap": 2.5,
+          "structural": 4.2,
+          "adjuster": 5
+        },
+        "tolerance_mm": {
+          "minus": 0.05,
+          "plus": 0.05
+        },
+        "manufacturing_method": "Pilot only; machinist confirms thread, tapping depth, chosen screw and remaining wall before cutting",
+        "measurement_method": "Pin gauges, thread gauge after machining and actual screw engagement inspection",
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN"
+      }
+    ],
+    "unverified_acceptance_targets": [
+      {
+        "feature": "assembled_support_axis_alignment",
+        "target_max_mm": 0.05,
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN",
+        "manufacturing_method": "Common setup plus measured assembly correction",
+        "measurement_method": "Ground gauge mandrel and indicator; target not yet achieved"
+      },
+      {
+        "feature": "dummy_gauge_runout",
+        "target_max_mm": 0.05,
+        "status": "ESTIMATED",
+        "source": "OWN_DESIGN",
+        "manufacturing_method": "Grind journals/barrel and measure assembled unit",
+        "measurement_method": "Dial indicator over a full manual revolution; target not developer-spreading validation"
+      }
+    ],
+    "real_interface_results": {
+      "actual_nip_gap_mm": null,
+      "actual_preload_N": null,
+      "selected_spring_rate_N_per_mm": null,
+      "selected_roller_surface": null,
+      "status": "UNKNOWN",
+      "source": "MEASUREMENT_REQUIRED"
+    },
+    "tessellation_is_not_machining_tolerance": true
+  },
+  "asset_path_base": "PROJECT_ROOT",
+  "verification_summary": {
+    "test_command": ".tools-venv/Scripts/python.exe -m pytest cad/roller_test_rig/R0_bench/test_roller_bench.py cad/feed_test_rig/R0_bench/test_feed_bench.py -q",
+    "tests_passed": 24,
+    "root_confirmed_default_external_temp_run": true,
+    "root_run_seconds": 9.15,
+    "physical_experiments_completed": false,
+    "scope": "PARAMETER_REJECTION_AND_NOMINAL_RIGID_CAD_ONLY"
+  }
+}

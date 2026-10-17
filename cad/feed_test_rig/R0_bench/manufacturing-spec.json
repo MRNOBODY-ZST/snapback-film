@@ -1,0 +1,22 @@
+{
+  "mode":"TEST_FIXTURE_ONLY", "source":"OWN_DESIGN", "status":"ESTIMATED",
+  "scope":"R0 independent observation bench machining targets; no cartridge-compatible pickup profile",
+  "general_linear_tolerance_mm":{"minus":0.1,"plus":0.1,"status":"ESTIMATED","source":"OWN_DESIGN"},
+  "critical_features":[
+    {"feature":"guide_slot_width","nominal_mm":6.6,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC mill/deburr two matched X slots","measurement_method":"Pin/inside gauges and matched clamp shanks; actual stop/side play measured after assembly"},
+    {"feature":"guide_head_channel_width","nominal_mm":10.5,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC underside channel, captive guide clamp heads must be fitted before fastening rails","measurement_method":"Inside gauge, verify chosen head fits without rubbing and cannot turn in channel"},
+    {"feature":"guide_head_channel_depth","nominal_mm":4,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC underside channel","measurement_method":"Depth micrometer, check head clearance above base"},
+    {"feature":"own_candidate_guide_clamp_square_head","nominal_mm":{"x":10,"y":10,"z":3},"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"Custom machined candidate or separately verified selected hardware; not in exported assembly","measurement_method":"Micrometer and free slide in actual rail; bolt strength/thread/shank selection unqualified"},
+    {"feature":"vertical_stage_slot_width","nominal_mm":4.5,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC mill small metal plates; check thin side walls after tapping","measurement_method":"Pin gauge, actual clamp screw and washer seating inspection"},
+    {"feature":"rail_top_height_above_base","nominal_mm":10,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"Machine paired rails together; no FDM precision sliding surfaces","measurement_method":"Surface plate and height gauge, indicator across two rails"},
+    {"feature":"support_pad_height","nominal_mm":3,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"Machine three generic metal pads as matched set; removable fixture adhesive for dry setup","measurement_method":"Micrometer and assembled pad plane measurement; not cartridge datum calibration"},
+    {"feature":"blank_end_plate_thickness","nominal_mm":6,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"Machine/deburr replaceable blank; no matched claw/contact edge exported","measurement_method":"Micrometer and trial screw engagement in beam"},
+    {"feature":"table_head_recess","nominal_mm":{"diameter":9.5,"depth":5},"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC recess; real screw head must fit fully below observation-table top","measurement_method":"Depth gauge and flush straightedge with actual fasteners"},
+    {"feature":"mount_and_beam_pilot_holes","nominal_mm":{"mount":4.2,"stage":2.5,"beam":3.3,"pressure_adjuster":5},"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"Pilots only; machinist verifies tap type, blind depth, hardware engagement and minimum walls","measurement_method":"Pin/thread gauges, screw trial and visual wall inspection"}
+  ],
+  "unverified_acceptance_targets":[
+    {"feature":"empty_carriage_guidance_repeatability","target_max_mm":0.1,"status":"ESTIMATED","source":"OWN_DESIGN","manufacturing_method":"Measured assembly of matched guide clamps and machined rails","measurement_method":"Indicator on hand-advanced empty carriage; not pickup or film-plane accuracy"}
+  ],
+  "real_interface_results":{"cartridge_envelope_mm":null,"actual_pickup_depth_mm":null,"actual_pickup_force_N":null,"actual_backpressure_N":null,"status":"UNKNOWN","source":"MEASUREMENT_REQUIRED"},
+  "tessellation_is_not_machining_tolerance":true
+}

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110mm" height="112mm" viewBox="-10 -18 110 112">
+<title>R0 independent bench carrier — OWN_DESIGN, no RB67 fit claim</title>
+<desc>Dimensions in mm. Connector circles are interface pin centres, not manufacturer footprints. Y coordinates are transformed from the component-side lower-left-origin coordinate contract.</desc>
+<style>text{font-family:Arial,sans-serif;font-size:2.6px;fill:#17283b}.port{fill:#e1effa;stroke:#285a85;stroke-width:.25}.pin{fill:#285a85}.power{fill:#fde8ce;stroke:#98632f;stroke-width:.25}.note{font-size:2.5px;fill:#5b6874}.small{font-size:2.1px}</style>
+<rect x="-10" y="-18" width="110" height="112" fill="white"/>
+<rect x="0" y="0" width="90" height="70" rx="1" fill="#f8fafc" stroke="#17283b" stroke-width=".4"/>
+<text x="0" y="-12" font-size="4">R0 BENCH CARRIER / OWN_DESIGN</text>
+<text x="0" y="-7" class="note">90 × 70 mm • dimensions mm • no final back fit / no PCB CAD</text>
+<text x="0" y="-3" class="note">Top view; local +X →, +Y ↑; connector envelopes ESTIMATED</text>
+<circle cx='4' cy='66' r='1.6' fill='white' stroke='#17283b' stroke-width='.3'/><text x='6' y='67' class='small'>H1</text>
+<circle cx='86' cy='66' r='1.6' fill='white' stroke='#17283b' stroke-width='.3'/><text x='88' y='67' class='small'>H2</text>
+<circle cx='86' cy='4' r='1.6' fill='white' stroke='#17283b' stroke-width='.3'/><text x='88' y='5' class='small'>H3</text>
+<circle cx='4' cy='4' r='1.6' fill='white' stroke='#17283b' stroke-width='.3'/><text x='6' y='5' class='small'>H4</text>
+<rect x='7.96' y='38.5' width='8.08' height='3' class='power'/>
+<rect x='8.91' y='39.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='14.54' cy='40' r='.45' class='pin'/>
+<text x='7.96' y='37.5' class='small'>J_MA</text>
+<rect x='7.96' y='26.5' width='8.08' height='3' class='power'/>
+<rect x='8.91' y='27.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='14.54' cy='28' r='.45' class='pin'/>
+<text x='7.96' y='25.5' class='small'>J_MB</text>
+<rect x='7.96' y='50.5' width='8.08' height='3' class='power'/>
+<rect x='8.91' y='51.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='14.54' cy='52' r='.45' class='pin'/>
+<text x='7.96' y='49.5' class='small'>J_VM</text>
+<rect x='20.42' y='58.5' width='13.16' height='3' class='power'/>
+<rect x='21.37' y='59.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='27' cy='60' r='.45' class='pin'/>
+<circle cx='32.08' cy='60' r='.45' class='pin'/>
+<text x='20.42' y='57.5' class='small'>J_BAT</text>
+<rect x='22.96' y='50.5' width='8.08' height='3' class='port'/>
+<rect x='23.91' y='51.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='29.54' cy='52' r='.45' class='pin'/>
+<text x='22.96' y='49.5' class='small'>J_LOGIC</text>
+<rect x='22.96' y='42.5' width='8.08' height='3' class='port'/>
+<rect x='23.91' y='43.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='29.54' cy='44' r='.45' class='pin'/>
+<text x='22.96' y='41.5' class='small'>J_SYS_MON</text>
+<rect x='47.42' y='56.5' width='13.16' height='3' class='port'/>
+<rect x='48.37' y='57.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='51.46' cy='58' r='.45' class='pin'/>
+<circle cx='54' cy='58' r='.45' class='pin'/>
+<circle cx='56.54' cy='58' r='.45' class='pin'/>
+<circle cx='59.08' cy='58' r='.45' class='pin'/>
+<text x='47.42' y='55.5' class='small'>J_UI</text>
+<rect x='48.69' y='46.5' width='10.62' height='3' class='port'/>
+<rect x='49.64' y='47.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='52.73' cy='48' r='.45' class='pin'/>
+<circle cx='55.27' cy='48' r='.45' class='pin'/>
+<circle cx='57.81' cy='48' r='.45' class='pin'/>
+<text x='48.69' y='45.5' class='small'>J_UART</text>
+<rect x='47.42' y='36.5' width='13.16' height='3' class='port'/>
+<rect x='48.37' y='37.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='51.46' cy='38' r='.45' class='pin'/>
+<circle cx='54' cy='38' r='.45' class='pin'/>
+<circle cx='56.54' cy='38' r='.45' class='pin'/>
+<circle cx='59.08' cy='38' r='.45' class='pin'/>
+<text x='47.42' y='35.5' class='small'>J_SWD</text>
+<rect x='48.69' y='26.5' width='10.62' height='3' class='port'/>
+<rect x='49.64' y='27.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='52.73' cy='28' r='.45' class='pin'/>
+<circle cx='55.27' cy='28' r='.45' class='pin'/>
+<circle cx='57.81' cy='28' r='.45' class='pin'/>
+<text x='48.69' y='25.5' class='small'>J_ARM</text>
+<rect x='26.69' y='21.5' width='10.62' height='3' class='port'/>
+<rect x='27.64' y='22.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='30.73' cy='23' r='.45' class='pin'/>
+<circle cx='33.27' cy='23' r='.45' class='pin'/>
+<circle cx='35.81' cy='23' r='.45' class='pin'/>
+<text x='26.69' y='20.5' class='small'>J_PROOF</text>
+<rect x='26.69' y='29.5' width='10.62' height='3' class='port'/>
+<rect x='27.64' y='30.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='30.73' cy='31' r='.45' class='pin'/>
+<circle cx='33.27' cy='31' r='.45' class='pin'/>
+<circle cx='35.81' cy='31' r='.45' class='pin'/>
+<text x='26.69' y='28.5' class='small'>J_DISPLAY</text>
+<rect x='73.96' y='53.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='54.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='55' r='.45' class='pin'/>
+<circle cx='80.54' cy='55' r='.45' class='pin'/>
+<text x='73.96' y='52.5' class='small'>J_S0</text>
+<rect x='73.96' y='46.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='47.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='48' r='.45' class='pin'/>
+<circle cx='80.54' cy='48' r='.45' class='pin'/>
+<text x='73.96' y='45.5' class='small'>J_S1</text>
+<rect x='73.96' y='39.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='40.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='41' r='.45' class='pin'/>
+<circle cx='80.54' cy='41' r='.45' class='pin'/>
+<text x='73.96' y='38.5' class='small'>J_S2</text>
+<rect x='73.96' y='32.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='33.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='34' r='.45' class='pin'/>
+<circle cx='80.54' cy='34' r='.45' class='pin'/>
+<text x='73.96' y='31.5' class='small'>J_S3</text>
+<rect x='73.96' y='25.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='26.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='27' r='.45' class='pin'/>
+<circle cx='80.54' cy='27' r='.45' class='pin'/>
+<text x='73.96' y='24.5' class='small'>J_S4</text>
+<rect x='73.96' y='18.5' width='8.08' height='3' class='port'/>
+<rect x='74.91' y='19.45' width='1.1' height='1.1' class='pin'/>
+<circle cx='78' cy='20' r='.45' class='pin'/>
+<circle cx='80.54' cy='20' r='.45' class='pin'/>
+<text x='73.96' y='17.5' class='small'>J_S5</text>
+<rect x='14.29' y='8.23' width='61.42' height='5.54' class='port'/>
+<rect x='15.24' y='11.72' width='1.1' height='1.1' class='pin'/>
+<circle cx='15.79' cy='9.73' r='.45' class='pin'/>
+<circle cx='18.33' cy='12.27' r='.45' class='pin'/>
+<circle cx='18.33' cy='9.73' r='.45' class='pin'/>
+<circle cx='20.87' cy='12.27' r='.45' class='pin'/>
+<circle cx='20.87' cy='9.73' r='.45' class='pin'/>
+<circle cx='23.41' cy='12.27' r='.45' class='pin'/>
+<circle cx='23.41' cy='9.73' r='.45' class='pin'/>
+<circle cx='25.95' cy='12.27' r='.45' class='pin'/>
+<circle cx='25.95' cy='9.73' r='.45' class='pin'/>
+<circle cx='28.49' cy='12.27' r='.45' class='pin'/>
+<circle cx='28.49' cy='9.73' r='.45' class='pin'/>
+<circle cx='31.03' cy='12.27' r='.45' class='pin'/>
+<circle cx='31.03' cy='9.73' r='.45' class='pin'/>
+<circle cx='33.57' cy='12.27' r='.45' class='pin'/>
+<circle cx='33.57' cy='9.73' r='.45' class='pin'/>
+<circle cx='36.11' cy='12.27' r='.45' class='pin'/>
+<circle cx='36.11' cy='9.73' r='.45' class='pin'/>
+<circle cx='38.65' cy='12.27' r='.45' class='pin'/>
+<circle cx='38.65' cy='9.73' r='.45' class='pin'/>
+<circle cx='41.19' cy='12.27' r='.45' class='pin'/>
+<circle cx='41.19' cy='9.73' r='.45' class='pin'/>
+<circle cx='43.73' cy='12.27' r='.45' class='pin'/>
+<circle cx='43.73' cy='9.73' r='.45' class='pin'/>
+<circle cx='46.27' cy='12.27' r='.45' class='pin'/>
+<circle cx='46.27' cy='9.73' r='.45' class='pin'/>
+<circle cx='48.81' cy='12.27' r='.45' class='pin'/>
+<circle cx='48.81' cy='9.73' r='.45' class='pin'/>
+<circle cx='51.35' cy='12.27' r='.45' class='pin'/>
+<circle cx='51.35' cy='9.73' r='.45' class='pin'/>
+<circle cx='53.89' cy='12.27' r='.45' class='pin'/>
+<circle cx='53.89' cy='9.73' r='.45' class='pin'/>
+<circle cx='56.43' cy='12.27' r='.45' class='pin'/>
+<circle cx='56.43' cy='9.73' r='.45' class='pin'/>
+<circle cx='58.97' cy='12.27' r='.45' class='pin'/>
+<circle cx='58.97' cy='9.73' r='.45' class='pin'/>
+<circle cx='61.51' cy='12.27' r='.45' class='pin'/>
+<circle cx='61.51' cy='9.73' r='.45' class='pin'/>
+<circle cx='64.05' cy='12.27' r='.45' class='pin'/>
+<circle cx='64.05' cy='9.73' r='.45' class='pin'/>
+<circle cx='66.59' cy='12.27' r='.45' class='pin'/>
+<circle cx='66.59' cy='9.73' r='.45' class='pin'/>
+<circle cx='69.13' cy='12.27' r='.45' class='pin'/>
+<circle cx='69.13' cy='9.73' r='.45' class='pin'/>
+<circle cx='71.67' cy='12.27' r='.45' class='pin'/>
+<circle cx='71.67' cy='9.73' r='.45' class='pin'/>
+<circle cx='74.21' cy='12.27' r='.45' class='pin'/>
+<circle cx='74.21' cy='9.73' r='.45' class='pin'/>
+<text x='14.29' y='7.23' class='small'>J_CTRL</text>
+<rect x='39.5' y='63' width='11' height='8' class='power'/><text x='39' y='77'>J_USB → -Y</text><path d="M0 70 H7 M0 70 V63" fill="none" stroke="#ce5353" stroke-width=".5"/>
+<text x="-7" y="74">(0,0)</text>
+<text x="0" y="83" class="note">4 × Ø3.2 at (4,4), (86,4), (86,66), (4,66): own bench mounting only.</text>
+<text x="0" y="87" class="note">Signal pin1 = square. Supplier footprint, current rating and MCU pad mapping pending.</text>
+</svg>

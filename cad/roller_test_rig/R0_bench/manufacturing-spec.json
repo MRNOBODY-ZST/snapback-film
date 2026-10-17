@@ -1,0 +1,22 @@
+{
+  "mode":"TEST_FIXTURE_ONLY", "source":"OWN_DESIGN", "status":"ESTIMATED",
+  "scope":"R0 independent bench machining targets; no physical achievement or film qualification claimed",
+  "general_linear_tolerance_mm":{"minus":0.1,"plus":0.1,"status":"ESTIMATED","source":"OWN_DESIGN"},
+  "critical_features":[
+    {"feature":"bearing_pocket_diameter","nominal_mm":22.02,"tolerance_mm":{"minus":0.01,"plus":0.01},"manufacturing_method":"CNC bore then finish/measure; not an asserted H7 fit","measurement_method":"Bore gauge and measured purchased bearing OD; check hand assembly and retention"},
+    {"feature":"custom_shaft_journal","nominal_mm":8,"tolerance_mm":{"minus":0.01,"plus":0},"manufacturing_method":"Turn and finish grind, custom part; bearing supplier tolerance must be checked","measurement_method":"Micrometer along both journals in two directions, trial bearing rotation without forcing"},
+    {"feature":"gauge_barrel_diameter","nominal_mm":30,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"Turn/grind rigid dummy only; no qualified developer-contact surface","measurement_method":"Micrometer in axial stations, indicator on assembled rotation"},
+    {"feature":"guide_width_y","nominal_mm":32.4,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC mill/deburr parallel guide faces","measurement_method":"Inside measurement at lower/middle/upper guide; feeler check with installed carrier"},
+    {"feature":"slider_width_y","nominal_mm":32,"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"CNC mill, sliding faces finish, no FDM bearing/slide surfaces","measurement_method":"Micrometer and free manual full travel; actual play recorded separately"},
+    {"feature":"bearing_axis_height_lower","nominal_mm":25,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"Machine both supports in common setup from base seating datum","measurement_method":"Gauge mandrel and height gauge/indicator over base; shim/re-machine if axes bind"},
+    {"feature":"bearing_pocket_depth","nominal_mm":7.2,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"CNC stepped bore; caps need controlled race retention after actual bearing inspection","measurement_method":"Depth micrometer; check bearing axial clearance and no shield/race rubbing"},
+    {"feature":"stop_insert_height","nominal_mm":5,"tolerance_mm":{"minus":0.02,"plus":0.02},"manufacturing_method":"Matched machined stop pair, removable; this park stop is not nip calibration","measurement_method":"Micrometer and both carrier stop contact heights"},
+    {"feature":"cap_and_structural_pilot_holes","nominal_mm":{"cap":2.5,"structural":4.2,"adjuster":5},"tolerance_mm":{"minus":0.05,"plus":0.05},"manufacturing_method":"Pilot only; machinist confirms thread, tapping depth, chosen screw and remaining wall before cutting","measurement_method":"Pin gauges, thread gauge after machining and actual screw engagement inspection"}
+  ],
+  "unverified_acceptance_targets":[
+    {"feature":"assembled_support_axis_alignment","target_max_mm":0.05,"status":"ESTIMATED","source":"OWN_DESIGN","manufacturing_method":"Common setup plus measured assembly correction","measurement_method":"Ground gauge mandrel and indicator; target not yet achieved"},
+    {"feature":"dummy_gauge_runout","target_max_mm":0.05,"status":"ESTIMATED","source":"OWN_DESIGN","manufacturing_method":"Grind journals/barrel and measure assembled unit","measurement_method":"Dial indicator over a full manual revolution; target not developer-spreading validation"}
+  ],
+  "real_interface_results":{"actual_nip_gap_mm":null,"actual_preload_N":null,"selected_spring_rate_N_per_mm":null,"selected_roller_surface":null,"status":"UNKNOWN","source":"MEASUREMENT_REQUIRED"},
+  "tessellation_is_not_machining_tolerance":true
+}

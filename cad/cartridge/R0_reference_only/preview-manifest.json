@@ -1,0 +1,50 @@
+{
+  "mode": "SOURCE_REFERENCE_PREVIEW",
+  "source_path": "cad/reference/square_cartridge_lgpl/Instax_sq_cartridge_v2.stl",
+  "source_sha256": "1b7ebfc58658abea9554bb1b0f2da2abefd855d58366b4bd8fedeb6961e8ba5d",
+  "source_page": "https://www.thingiverse.com/thing:3790489/files",
+  "license": "LGPL-2.1",
+  "manufacturing_authorized": false,
+  "physical_validation": false,
+  "geometry": {
+    "triangle_count": 1576,
+    "min_xyz": [
+      -1.0127910375595093,
+      -0.499290406703949,
+      0.027554703876376152
+    ],
+    "max_xyz": [
+      77.0127944946289,
+      90.0,
+      18.600000381469727
+    ],
+    "extents_xyz": [
+      78.02558553218842,
+      90.49929040670395,
+      18.57244567759335
+    ],
+    "signed_volume_model_units_cubed": 30692.14326827499,
+    "physical_validation": false,
+    "unit": "source model coordinate; STL has no unit metadata"
+  },
+  "mm_interpretation": "ESTIMATED from original printing context; not verified physical scale",
+  "coordinate_registration_to_R": null,
+  "coordinate_registration_to_P": null,
+  "effective_emulsion_plane": "UNKNOWN — MEASUREMENT_REQUIRED",
+  "exports": [
+    {
+      "path": "cad/cartridge/R0_reference_only/instax_square_cartridge.SOURCE_REFERENCE.step",
+      "sha256": "397071ad295a7689a01744ed8518b3e67e5e9881da9e7a81884259d3f05ef444",
+      "bytes": 3825420
+    },
+    {
+      "path": "cad/cartridge/R0_reference_only/instax_square_cartridge.SOURCE_REFERENCE.stl",
+      "sha256": "f3f63121e8cc9a0c91882ba6c0ff2ad8783007655be248a3d5f01605f9438ed7",
+      "bytes": 78884
+    }
+  ],
+  "cad_kernel_validation": {
+    "valid_nominal_solid": true,
+    "nominal_volume_under_mm_assumption_mm3": 30692.143268274594
+  }
+}

@@ -1,0 +1,741 @@
+{
+  "scope": "Reference file integrity and nominal model geometry; no physical verification",
+  "date": "2026-10-07",
+  "assets": [
+    {
+      "path": "cad/reference/g_adapter_v2/Mamiya_Press_G_V2.stl",
+      "source_id": "G02",
+      "creator": "rodgsilva / rodsgear",
+      "source_page": "https://www.printables.com/model/117680-mamiya-press-universal-g-adapter/files",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": "https://media.printables.com/media/prints/117680/stls/1147546_e1ac2a9b-0101-41c4-9d61-5c4b5e17e1b2/mamiya_press_g_v2.stl",
+      "use": "G-lock receiving-side nominal geometry; verify complementary back interface",
+      "bytes": 38684,
+      "sha256": "5740b7c333f82ebb7d90d2772c028be9f465382e26caf5d8d0053a478aca06d6",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 38684,
+        "sha256": "5740b7c333f82ebb7d90d2772c028be9f465382e26caf5d8d0053a478aca06d6",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 772,
+        "min_xyz": [
+          -197.11790466308594,
+          -55.43152618408203,
+          -5.2330241203308105
+        ],
+        "max_xyz": [
+          -73.59844207763672,
+          56.56847381591797,
+          -0.08302392065525055
+        ],
+        "extents_xyz": [
+          123.51946258544922,
+          112.0,
+          5.15000019967556
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/g_adapter_v2/Mamiya_Press_base_V2.stl",
+      "source_id": "G02",
+      "creator": "rodgsilva / rodsgear",
+      "source_page": "https://www.printables.com/model/117680-mamiya-press-universal-g-adapter/files",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": "https://media.printables.com/media/prints/117680/stls/1147544_5ac2bc48-96a7-43eb-83ae-8b78cae5c1ba/mamiya_press_base_v2.stl",
+      "use": "Press M-side assembly context only; not the RB67 R-lock",
+      "bytes": 155484,
+      "sha256": "e045a1928cf2d1b7bf53af101c92039459c43574d7a2af64c8b190f4c19423b0",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 155484,
+        "sha256": "e045a1928cf2d1b7bf53af101c92039459c43574d7a2af64c8b190f4c19423b0",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 3108,
+        "min_xyz": [
+          -197.117919921875,
+          -55.43000030517578,
+          -4.811929965597983e-09
+        ],
+        "max_xyz": [
+          -71.13108825683594,
+          56.56999969482422,
+          13.715771675109863
+        ],
+        "extents_xyz": [
+          125.98683166503906,
+          112.0,
+          13.715771679921794
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/g_adapter_v2/Latch01_V2.stl",
+      "source_id": "G02",
+      "creator": "rodgsilva / rodsgear",
+      "source_page": "https://www.printables.com/model/117680-mamiya-press-universal-g-adapter/files",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": "https://media.printables.com/media/prints/117680/stls/1147548_e0c35dd4-3824-44a9-9238-df09ac91ff09/latch01_v2.stl",
+      "use": "G-lock receiving latch nominal geometry",
+      "bytes": 32484,
+      "sha256": "de43cddf89778867a61d1cb71ed4ededf03d6ca556c2b7084ab4875b2433efa4",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 32484,
+        "sha256": "de43cddf89778867a61d1cb71ed4ededf03d6ca556c2b7084ab4875b2433efa4",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 648,
+        "min_xyz": [
+          -175.19712829589844,
+          -54.234439849853516,
+          -7.673430919647217
+        ],
+        "max_xyz": [
+          -94.19840240478516,
+          -36.23659896850586,
+          -5.672102928161621
+        ],
+        "extents_xyz": [
+          80.99872589111328,
+          17.997840881347656,
+          2.0013279914855957
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/g_adapter_v2/Latch02_V2.stl",
+      "source_id": "G02",
+      "creator": "rodgsilva / rodsgear",
+      "source_page": "https://www.printables.com/model/117680-mamiya-press-universal-g-adapter/files",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": "https://media.printables.com/media/prints/117680/stls/1147545_aa731e63-2a0f-461a-8fc8-1fd332a9d5b6/latch02_v2.stl",
+      "use": "G-lock receiving latch nominal geometry",
+      "bytes": 32484,
+      "sha256": "9775ff3fae9fdf9fee3b924873b70a54459a95a2d42c0730f32ec01aea0e9b92",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 32484,
+        "sha256": "9775ff3fae9fdf9fee3b924873b70a54459a95a2d42c0730f32ec01aea0e9b92",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 648,
+        "min_xyz": [
+          -176.09048461914062,
+          37.8125114440918,
+          -7.729764461517334
+        ],
+        "max_xyz": [
+          -95.09175109863281,
+          55.81034851074219,
+          -5.728436470031738
+        ],
+        "extents_xyz": [
+          80.99873352050781,
+          17.99783706665039,
+          2.0013279914855957
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/square_pressure_cc0/LG_square_bar.stl",
+      "source_id": "C02",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.printables.com/model/276605-lomograflok-instax-square-mod/files",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download_url": "https://media.printables.com/media/prints/276605/stls/2454885_45f53b02-878b-4247-a288-abd3886341b6/lg_square_bar.stl",
+      "use": "Square pressure-contact/clearance reference, no Lomograflok hardware dependency",
+      "bytes": 5484,
+      "sha256": "ef64615c0d2f21dbeb2330f84ef060555b48701ca22cc12ed9aea736d0b470c4",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 5484,
+        "sha256": "ef64615c0d2f21dbeb2330f84ef060555b48701ca22cc12ed9aea736d0b470c4",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 108,
+        "min_xyz": [
+          -3.9000000953674316,
+          -18.600000381469727,
+          -0.15623264014720917
+        ],
+        "max_xyz": [
+          0.6000000238418579,
+          -8.0,
+          79.34376525878906
+        ],
+        "extents_xyz": [
+          4.5000001192092896,
+          10.600000381469727,
+          79.49999789893627
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/square_pressure_cc0/LG_square_cover.stl",
+      "source_id": "C02",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.printables.com/model/276605-lomograflok-instax-square-mod/files",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download_url": "https://media.printables.com/media/prints/276605/stls/2454884_fad77763-8fb8-4089-b7d4-06b514642b3d/lg_square_cover.stl",
+      "use": "Square pressure-cover clearance reference, no Lomograflok hardware dependency",
+      "bytes": 253484,
+      "sha256": "bac36f70dd52834157c84402ca4b5d384aaaa1734f284a76bfce102198428736",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 253484,
+        "sha256": "bac36f70dd52834157c84402ca4b5d384aaaa1734f284a76bfce102198428736",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 5068,
+        "min_xyz": [
+          -7.25,
+          -12.350000381469727,
+          -8.031232833862305
+        ],
+        "max_xyz": [
+          3.950000047683716,
+          -1.5,
+          87.21876525878906
+        ],
+        "extents_xyz": [
+          11.200000047683716,
+          10.850000381469727,
+          95.24999809265137
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/super67/Super67_CAD.step",
+      "source_id": "S01",
+      "creator": "Damien A.W. Humby",
+      "source_page": "https://github.com/DamienHazard/Super-67",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "pinned_commit": "6701a9b8cd4fbddfb103e84b973329cd749e12bc",
+      "download_url": "https://raw.githubusercontent.com/DamienHazard/Super-67/6701a9b8cd4fbddfb103e84b973329cd749e12bc/Super67_CAD.step",
+      "use": "Noncommercial comparison only; no copied NC geometry in final unrestricted design",
+      "bytes": 3222514,
+      "sha256": "1574df988f07f9bd9a40b34e8a68b7d7bb3bb1e91712d2fec0932a5cf85a2420",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "git_blob_sha1": "f4f241281f609c3c3c3bd99b1182d0f4cb3e4022",
+      "inspection": {
+        "bytes": 3222514,
+        "sha256": "1574df988f07f9bd9a40b34e8a68b7d7bb3bb1e91712d2fec0932a5cf85a2420",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "STEP Part 21 envelope",
+        "entity_count": 49907,
+        "declared_si_units": [
+          "SI_UNIT(.KILO.,.GRAM.)\r\n)",
+          "SI_UNIT(.MILLI.,.METRE.)\r\n)",
+          "SI_UNIT($,.METRE.)\r\n)",
+          "SI_UNIT($,.RADIAN.)\r\n)",
+          "SI_UNIT($,.STERADIAN.)\r\nSOLID_ANGLE_UNIT()\r\n)"
+        ],
+        "solids_not_imported_or_validated": true
+      }
+    },
+    {
+      "path": "cad/reference/super67/Super67_body_graflok.stl",
+      "source_id": "S01",
+      "creator": "Damien A.W. Humby",
+      "source_page": "https://github.com/DamienHazard/Super-67",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "pinned_commit": "6701a9b8cd4fbddfb103e84b973329cd749e12bc",
+      "download_url": "https://raw.githubusercontent.com/DamienHazard/Super-67/6701a9b8cd4fbddfb103e84b973329cd749e12bc/Super67_body_graflok.stl",
+      "use": "Noncommercial comparison only; no copied NC geometry in final unrestricted design",
+      "bytes": 134884,
+      "sha256": "8685b21fa6595caeef83cf45a58f00d94f53dc0d1acd58e152affbb647f37b6f",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "git_blob_sha1": "5cdacdcf8af4022c9d42cb1aae2458ef2becbf4f",
+      "inspection": {
+        "bytes": 134884,
+        "sha256": "8685b21fa6595caeef83cf45a58f00d94f53dc0d1acd58e152affbb647f37b6f",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 2696,
+        "min_xyz": [
+          150.0,
+          -60.0,
+          -18.149999618530273
+        ],
+        "max_xyz": [
+          280.0,
+          70.0,
+          -13.149999618530273
+        ],
+        "extents_xyz": [
+          130.0,
+          130.0,
+          5.0
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/super67/Super67_body_graflok_latch_bottom.stl",
+      "source_id": "S01",
+      "creator": "Damien A.W. Humby",
+      "source_page": "https://github.com/DamienHazard/Super-67",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "pinned_commit": "6701a9b8cd4fbddfb103e84b973329cd749e12bc",
+      "download_url": "https://raw.githubusercontent.com/DamienHazard/Super-67/6701a9b8cd4fbddfb103e84b973329cd749e12bc/Super67_body_graflok_latch_bottom.stl",
+      "use": "Noncommercial comparison only; no copied NC geometry in final unrestricted design",
+      "bytes": 88084,
+      "sha256": "6800fe76f2c0667bff3e3a2b9ab508914081214d978d8e67eccb0f86d0df0124",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "git_blob_sha1": "6da3f46bc437a39d2299ce02c616af203f2dfefe",
+      "inspection": {
+        "bytes": 88084,
+        "sha256": "6800fe76f2c0667bff3e3a2b9ab508914081214d978d8e67eccb0f86d0df0124",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 1760,
+        "min_xyz": [
+          185.9063720703125,
+          -54.850555419921875,
+          -20.149999618530273
+        ],
+        "max_xyz": [
+          266.9063720703125,
+          -34.850555419921875,
+          -18.149999618530273
+        ],
+        "extents_xyz": [
+          81.0,
+          20.0,
+          2.0
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/super67/Super67_body_graflok_latch_top.stl",
+      "source_id": "S01",
+      "creator": "Damien A.W. Humby",
+      "source_page": "https://github.com/DamienHazard/Super-67",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "pinned_commit": "6701a9b8cd4fbddfb103e84b973329cd749e12bc",
+      "download_url": "https://raw.githubusercontent.com/DamienHazard/Super-67/6701a9b8cd4fbddfb103e84b973329cd749e12bc/Super67_body_graflok_latch_top.stl",
+      "use": "Noncommercial comparison only; no copied NC geometry in final unrestricted design",
+      "bytes": 88084,
+      "sha256": "ff7a1cb87fbf855ca7cd29a05e537a6e3dca0555eaeaf2942e37cef96f6746cf",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "git_blob_sha1": "f6ca6e723434ffecb442b38216ee1904aca8a1bd",
+      "inspection": {
+        "bytes": 88084,
+        "sha256": "ff7a1cb87fbf855ca7cd29a05e537a6e3dca0555eaeaf2942e37cef96f6746cf",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 1760,
+        "min_xyz": [
+          185.9063720703125,
+          44.850555419921875,
+          -20.149999618530273
+        ],
+        "max_xyz": [
+          266.9063720703125,
+          64.85055541992188,
+          -18.149999618530273
+        ],
+        "extents_xyz": [
+          81.0,
+          20.0,
+          2.0
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/super67/README.md",
+      "source_id": "S01",
+      "creator": "Damien A.W. Humby",
+      "source_page": "https://github.com/DamienHazard/Super-67",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "pinned_commit": "6701a9b8cd4fbddfb103e84b973329cd749e12bc",
+      "download_url": "https://raw.githubusercontent.com/DamienHazard/Super-67/6701a9b8cd4fbddfb103e84b973329cd749e12bc/README.md",
+      "use": "Noncommercial comparison only; no copied NC geometry in final unrestricted design",
+      "bytes": 2470,
+      "sha256": "69b4de1201a58944c27a70b11da67a30af52d6a4a61d9ae7131718d4e142daaa",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "git_blob_sha1": "a7f0d977dacc84b09271535231d910a8c03d654f",
+      "inspection": {
+        "bytes": 2470,
+        "sha256": "69b4de1201a58944c27a70b11da67a30af52d6a4a61d9ae7131718d4e142daaa",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "source notice"
+      }
+    },
+    {
+      "path": "cad/reference/square_cartridge_lgpl/Instax_sq_cartridge_v2.stl",
+      "source_id": "C01",
+      "creator": "Jocelyn Girard / jclngrrd",
+      "source_page": "https://www.thingiverse.com/thing:3790489/files",
+      "license": "LGPL-2.1",
+      "license_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+      "download_url": null,
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Square cartridge nominal geometry; physical cartridge and exposure plane remain unverified",
+      "bytes": 78884,
+      "sha256": "1b7ebfc58658abea9554bb1b0f2da2abefd855d58366b4bd8fedeb6961e8ba5d",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Browser delivered the file; no precise public binary URL captured. Windows HostUrl only identifies https://www.thingiverse.com/. No guessed URL recorded.",
+      "archive_crosscheck": {
+        "zip_filename": "Instax Square Cartridge - 3790489.zip",
+        "zip_member": "files/Instax_sq_cartridge_v2.stl",
+        "identical_sha256": true
+      },
+      "inspection": {
+        "bytes": 78884,
+        "sha256": "1b7ebfc58658abea9554bb1b0f2da2abefd855d58366b4bd8fedeb6961e8ba5d",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "binary STL",
+        "triangles": 1576,
+        "min_xyz": [
+          -1.0127910375595093,
+          -0.499290406703949,
+          0.027554703876376152
+        ],
+        "max_xyz": [
+          77.0127944946289,
+          90.0,
+          18.600000381469727
+        ],
+        "extents_xyz": [
+          78.02558553218842,
+          90.49929040670395,
+          18.57244567759335
+        ],
+        "unit": "unitless model coordinates",
+        "intended_unit": "mm assumed from creator printing context; verify before use",
+        "quantity_provenance": "DERIVED",
+        "physical_applicability": "ESTIMATED",
+        "coordinate_registration_to_project": null
+      }
+    },
+    {
+      "path": "cad/reference/square_pressure_cc0/LG_square_bar.step",
+      "source_id": "C02",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.printables.com/model/276605-lomograflok-instax-square-mod/files",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download_url": "https://files.printables.com/media/prints/276605/stls/2454887_2bbcbd08-a22f-4b59-96ee-26a81ad5191b/lg_square_bar.step",
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Editable Square pressure-bar reference; no Lomograflok hardware dependency",
+      "bytes": 51510,
+      "sha256": "dbf6ac21c66df61691a878cf7ddd3b8e32dca041c03bcf63700fcfafab366abd",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Downloaded file Windows Zone.Identifier HostUrl; independently verified by anonymous curl HEAD: HTTP 200, Content-Length and Content-Disposition match",
+      "anonymous_head_status": 200,
+      "asset_path_id": "2454887_2bbcbd08-a22f-4b59-96ee-26a81ad5191b",
+      "inspection": {
+        "bytes": 51510,
+        "sha256": "dbf6ac21c66df61691a878cf7ddd3b8e32dca041c03bcf63700fcfafab366abd",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "STEP Part 21 envelope",
+        "entity_count": 1078,
+        "declared_si_units": [
+          "SI_UNIT(.KILO.,.GRAM.)\n)",
+          "SI_UNIT(.MILLI.,.METRE.)\n)",
+          "SI_UNIT($,.METRE.)\n)",
+          "SI_UNIT($,.RADIAN.)\n)",
+          "SI_UNIT($,.STERADIAN.)\nSOLID_ANGLE_UNIT()\n)"
+        ],
+        "solids_not_imported_or_validated": true
+      }
+    },
+    {
+      "path": "cad/reference/square_pressure_cc0/LG_square_cover.step",
+      "source_id": "C02",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.printables.com/model/276605-lomograflok-instax-square-mod/files",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download_url": "https://files.printables.com/media/prints/276605/stls/2454886_ba0dc476-7c50-41ad-a2fc-6d9913299956/lg_square_cover.step",
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Editable Square pressure-cover reference; no Lomograflok hardware dependency",
+      "bytes": 255051,
+      "sha256": "37e78706ded43403e3c75a49effe126be2996b02f10e46d41737ced1f78ebd20",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Downloaded file Windows Zone.Identifier HostUrl; independently verified by anonymous curl HEAD: HTTP 200, Content-Length and Content-Disposition match",
+      "anonymous_head_status": 200,
+      "asset_path_id": "2454886_ba0dc476-7c50-41ad-a2fc-6d9913299956",
+      "inspection": {
+        "bytes": 255051,
+        "sha256": "37e78706ded43403e3c75a49effe126be2996b02f10e46d41737ced1f78ebd20",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "STEP Part 21 envelope",
+        "entity_count": 3960,
+        "declared_si_units": [
+          "SI_UNIT(.KILO.,.GRAM.)\n)",
+          "SI_UNIT(.MILLI.,.METRE.)\n)",
+          "SI_UNIT($,.METRE.)\n)",
+          "SI_UNIT($,.RADIAN.)\n)",
+          "SI_UNIT($,.STERADIAN.)\nSOLID_ANGLE_UNIT()\n)"
+        ],
+        "solids_not_imported_or_validated": true
+      }
+    },
+    {
+      "path": "cad/reference/square_pressure_cc0/Lomograflok Square.f3d",
+      "source_id": "C02",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.printables.com/model/276605-lomograflok-instax-square-mod/files",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "download_url": "https://files.printables.com/media/prints/276605/stls/2454888_4bf535c5-ff31-49ca-b980-8e2cf21be92e/lomograflok-square.f3d",
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Editable assembly reference; native Fusion geometry not imported or physically verified",
+      "bytes": 68980,
+      "sha256": "aff79bea43d490185a57ba37d809b3a2b20bc61e7178d4f02b61528f78d60a30",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Downloaded file Windows Zone.Identifier HostUrl; independently verified by anonymous curl HEAD: HTTP 200, Content-Length and Content-Disposition match",
+      "anonymous_head_status": 200,
+      "asset_path_id": "2454888_4bf535c5-ff31-49ca-b980-8e2cf21be92e",
+      "inspection": {
+        "bytes": 68980,
+        "sha256": "aff79bea43d490185a57ba37d809b3a2b20bc61e7178d4f02b61528f78d60a30",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "Fusion archive",
+        "member_count": 14,
+        "native_geometry_not_evaluated": true
+      }
+    },
+    {
+      "path": "cad/reference/g_adapter_v2/Mamiya_Press_G_Adapter_V2.f3d",
+      "source_id": "G02",
+      "creator": "rodgsilva / rodsgear",
+      "source_page": "https://www.printables.com/model/117680-mamiya-press-universal-g-adapter/files",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": "https://files.printables.com/media/prints/117680/stls/1147547_ecdd840b-4a04-4b62-bf85-2bf748e3a236/mamiya_press_g_adapter_v2.f3d",
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Editable G-lock receiving-side reference; complementary RB67 back interface remains unverified",
+      "bytes": 526812,
+      "sha256": "10d8f2d64faa93afa72f9a1551a75275facb4fcea831ae89b8dc276dd554d50c",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Downloaded file Windows Zone.Identifier HostUrl; independently verified by anonymous curl HEAD: HTTP 200, Content-Length and Content-Disposition match",
+      "anonymous_head_status": 200,
+      "asset_path_id": "1147547_ecdd840b-4a04-4b62-bf85-2bf748e3a236",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "inspection": {
+        "bytes": 526812,
+        "sha256": "10d8f2d64faa93afa72f9a1551a75275facb4fcea831ae89b8dc276dd554d50c",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "Fusion archive",
+        "member_count": 18,
+        "native_geometry_not_evaluated": true
+      }
+    },
+    {
+      "path": "cad/reference/g_adapter_v4/Mamiya_Press_G_Adapter_v4.f3d",
+      "source_id": "G03",
+      "creator": "SPRKPLG / Thnikkamax",
+      "source_page": "https://www.thingiverse.com/thing:4269290/files",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "download_url": null,
+      "download_method": "Creator file card Download button in normal browser UI; no account sign-in or credentials used",
+      "download_provenance": "Exact creator filename and normal UI download; SHA256 verified locally",
+      "use": "Editable remixed G-lock template; creator marks work in progress; complementary RB67 back interface unverified",
+      "bytes": 962578,
+      "sha256": "fd73a16506d3581d2d0879b459582ca8baf163f2f62555ef3d8f8e5080dc65b0",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "download_url_provenance": "Browser delivered the file; no precise public binary URL captured. Windows HostUrl only identifies https://www.thingiverse.com/. No guessed URL recorded.",
+      "upstream_page": "https://www.thingiverse.com/thing:4249403",
+      "upstream_creator": "rodgsilva / rodsgear",
+      "inspection": {
+        "bytes": 962578,
+        "sha256": "fd73a16506d3581d2d0879b459582ca8baf163f2f62555ef3d8f8e5080dc65b0",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "Fusion archive",
+        "member_count": 17,
+        "native_geometry_not_evaluated": true
+      }
+    },
+    {
+      "path": "cad/reference/square_cartridge_lgpl/README.txt",
+      "source_id": "C01",
+      "creator": "Jocelyn Girard / jclngrrd",
+      "source_page": "https://www.thingiverse.com/thing:3790489",
+      "license": "LGPL-2.1",
+      "license_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+      "download_url": null,
+      "download_method": "Creator Download all files UI; unchanged member of original Thingiverse ZIP",
+      "archive_member": "README.txt",
+      "archive_sha256": "6a45ab94b57582cce78fe349f931ca1ff8bd13fa4656d6536e6e0596d49cc191",
+      "use": "Unchanged original author description or license notice",
+      "bytes": 197,
+      "sha256": "c823349b1637f0c909472332b84764cce2937755dd43d2a10c2dada6a8fadce5",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 197,
+        "sha256": "c823349b1637f0c909472332b84764cce2937755dd43d2a10c2dada6a8fadce5",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "source notice"
+      }
+    },
+    {
+      "path": "cad/reference/square_cartridge_lgpl/LICENSE.txt",
+      "source_id": "C01",
+      "creator": "Jocelyn Girard / jclngrrd",
+      "source_page": "https://www.thingiverse.com/thing:3790489",
+      "license": "LGPL-2.1",
+      "license_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+      "download_url": null,
+      "download_method": "Creator Download all files UI; unchanged member of original Thingiverse ZIP",
+      "archive_member": "LICENSE.txt",
+      "archive_sha256": "6a45ab94b57582cce78fe349f931ca1ff8bd13fa4656d6536e6e0596d49cc191",
+      "use": "Unchanged original author description or license notice",
+      "bytes": 85,
+      "sha256": "7bce490c20be4784caae535ec793691598138e7b7242e4f718de4b421958fe26",
+      "downloaded_at": "2026-10-07",
+      "modified": false,
+      "physical_validation": false,
+      "manufacturing_authorized": false,
+      "inspection": {
+        "bytes": 85,
+        "sha256": "7bce490c20be4784caae535ec793691598138e7b7242e4f718de4b421958fe26",
+        "physical_validation": false,
+        "manufacturing_authorized": false,
+        "format": "source notice"
+      }
+    }
+  ],
+  "feasibility_result": "UNCERTAIN — MEASUREMENT REQUIRED"
+}

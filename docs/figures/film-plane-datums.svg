@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="650" viewBox="0 0 1280 650">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8z" fill="#304f65"/></marker></defs>
+<rect width="1280" height="650" fill="#f8fafb"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#19364b">
+<text x="40" y="50" font-size="28" font-weight="bold">R0 • RB67 / 原旋转接环 / Square 片盒：基准剖面关系</text>
+<text x="40" y="85" font-size="18" fill="#a5431c">符号剖面，非比例、非实际占位 CAD；所有未测量距离 = null mm / MEASUREMENT_REQUIRED</text>
+<line x1="70" y1="130" x2="1200" y2="130" stroke="#304f65" stroke-width="2" marker-end="url(#a)"/>
+<text x="70" y="120" font-size="17">镜头方向 ←</text><text x="1030" y="119" font-size="17">+Z → 后方</text>
+<rect x="60" y="175" width="165" height="190" rx="8" fill="#dce6ed"/><text x="82" y="252" font-size="21">RB67 BODY</text><text x="82" y="284" font-size="17">通光域待测</text>
+<rect x="245" y="175" width="190" height="190" rx="8" fill="#d0dce6"/><text x="270" y="236" font-size="21">原旋转接环</text><text x="270" y="270" font-size="17">空腔/锁扣待测</text><text x="270" y="302" font-size="17">型号必须匹配</text>
+<rect x="455" y="175" width="145" height="190" rx="8" fill="#e8e3d0"/><text x="474" y="225" font-size="19">自制接口</text><text x="474" y="260" font-size="17">暗板/遮光</text><text x="474" y="295" font-size="17">尺寸未冻结</text>
+<line x1="622" y1="155" x2="622" y2="386" stroke="#bc571e" stroke-width="4"/><text x="640" y="210" font-size="19" fill="#bc571e">目标：乳剂有效面 = 原焦平面</text><text x="640" y="242" font-size="17">z_E = z_R （必须实证；图中位置不是测量）</text>
+<rect x="710" y="280" width="240" height="85" rx="7" fill="#dce8dc"/><text x="730" y="316" font-size="20">完整 Square 片盒</text><text x="730" y="344" font-size="16">前壳占位/片堆/压片待测</text>
+<rect x="970" y="280" width="255" height="85" rx="7" fill="#dce6ef"/><text x="988" y="314" font-size="20">拾片 + 滚轮 + 遮光出口</text><text x="988" y="344" font-size="16">沿出片方向布局，不据图定尺寸</text>
+<line x1="445" y1="160" x2="445" y2="398" stroke="#304f65" stroke-dasharray="7 5" stroke-width="2"/><text x="295" y="417" font-size="17">基准 A：接环定位面，定义 z=0</text>
+<line x1="445" y1="447" x2="622" y2="447" stroke="#304f65" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/><text x="470" y="475" font-size="18">z_R = null mm</text>
+<text x="48" y="535" font-size="20">原焦面约束：z_P_required = z_R − h_E</text>
+<text x="48" y="571" font-size="20">重叠投影的间隙：g = (z_R − h_E) + f_C − b_R；最坏下界 g_L ≥ c_req 才可能通过</text>
+<text x="48" y="610" font-size="20" fill="#a5431c">FEASIBILITY RESULT: UNCERTAIN — MEASUREMENT REQUIRED • 不允许后移焦面掩盖干涉</text>
+</g></svg>
